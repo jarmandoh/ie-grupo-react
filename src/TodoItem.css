@@ -1,0 +1,24 @@
+.TodoItem{
+    height: auto;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;    
+    justify-content: space-between;
+    box-shadow: 1px 1px 1px 1px #cecece;
+    margin: 0 0 15px 0;
+    padding: 10px;
+    background: rgb(86,129,255);
+    background: linear-gradient(90deg, rgba(86,129,255,1) 0%, rgba(0,164,255,1) 100%);
+    border-radius: 5px;
+}
+.TodoItem p{
+    color:#fff;
+    background-color: green;
+    width: 100%;
+    padding: 10px 20px;
+}
+.TodoItem span:last-child:hover{
+    color: red;
+    cursor: pointer;
+}
