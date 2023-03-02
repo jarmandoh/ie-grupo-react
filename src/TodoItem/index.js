@@ -1,5 +1,7 @@
 import React from "react";
 import './TodoItem.css';
+import { BsFillXCircleFill } from 'react-icons/bs';
+
 
 function TodoItem (props) {
     return(
@@ -12,10 +14,11 @@ function TodoItem (props) {
       <p className={`TodoItem-p ${props.completed && 'TodoItem-p--complete'}`}>
         {props.text}
       </p>
+      
       <span className="Icon Icon-delete"
         onClick={props.onDelete}
       >
-        X
+      <BsFillXCircleFill />
       </span>
     </li>
     )
